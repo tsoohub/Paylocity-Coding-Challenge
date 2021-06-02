@@ -1,15 +1,4 @@
-﻿// *******************************************************************
-// * Solution:  Paylocity
-// * Project:   Repository
-// * File:      IEmployeeRepository.cs
-// * 
-// * DESCRIPTION: Defines the contract for employee repository implementations. 
-// * 
-// * SOFTWARE HISTORY:
-// * DATE        DEVELOPER  DESCRIPTION
-// * 01/30/2016  dsmith     Initial revision
-// *******************************************************************
-using Models;
+﻿using Models;
 using System.Collections.Generic;
 
 namespace Repository

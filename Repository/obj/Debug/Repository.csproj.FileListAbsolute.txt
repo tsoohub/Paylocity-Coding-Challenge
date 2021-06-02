@@ -14,3 +14,12 @@ C:\Users\tsood\source\repos\PaylocityCodingChallenge2\Repository\obj\Debug\Repos
 C:\Users\tsood\source\repos\PaylocityCodingChallenge2\Repository\obj\Debug\Repository.csproj.CopyComplete
 C:\Users\tsood\source\repos\PaylocityCodingChallenge2\Repository\obj\Debug\Repository.dll
 C:\Users\tsood\source\repos\PaylocityCodingChallenge2\Repository\obj\Debug\Repository.pdb
+C:\Users\tsood\source\repos\PaylocityChallenge\Repository\bin\Debug\Repository.dll
+C:\Users\tsood\source\repos\PaylocityChallenge\Repository\bin\Debug\Repository.pdb
+C:\Users\tsood\source\repos\PaylocityChallenge\Repository\bin\Debug\Models.dll
+C:\Users\tsood\source\repos\PaylocityChallenge\Repository\bin\Debug\Models.pdb
+C:\Users\tsood\source\repos\PaylocityChallenge\Repository\obj\Debug\Repository.csprojAssemblyReference.cache
+C:\Users\tsood\source\repos\PaylocityChallenge\Repository\obj\Debug\Repository.csproj.CoreCompileInputs.cache
+C:\Users\tsood\source\repos\PaylocityChallenge\Repository\obj\Debug\Repository.csproj.CopyComplete
+C:\Users\tsood\source\repos\PaylocityChallenge\Repository\obj\Debug\Repository.dll
+C:\Users\tsood\source\repos\PaylocityChallenge\Repository\obj\Debug\Repository.pdb

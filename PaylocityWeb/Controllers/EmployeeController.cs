@@ -1,17 +1,4 @@
-﻿// *******************************************************************
-// * Solution:  Paylocity
-// * Project:   PaylocityWeb
-// * File:      EmployeeController.cs
-// * 
-// * DESCRIPTION: Employee controller. 
-// * 
-// * SOFTWARE HISTORY:
-// * DATE        DEVELOPER  DESCRIPTION
-// * 01/30/2016  dsmith     Initial revision
-// * 02/10/2016  dsmith     Moved all business logic to the Business project
-// *                        Added constructors
-// *******************************************************************
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Web.Mvc;
 using Models;
 using Repository;

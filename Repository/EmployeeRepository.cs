@@ -1,15 +1,4 @@
-﻿// *******************************************************************
-// * Solution:  Paylocity
-// * Project:   Repository
-// * File:      EmployeeRepository.cs
-// * 
-// * DESCRIPTION: Employee repository. 
-// * 
-// * SOFTWARE HISTORY:
-// * DATE        DEVELOPER  DESCRIPTION
-// * 01/30/2016  dsmith     Initial revision
-// *******************************************************************
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using Models;
 
 namespace Repository

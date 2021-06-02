@@ -1,16 +1,4 @@
-﻿// *******************************************************************
-// * Solution:  Paylocity
-// * Project:   Repository
-// * File:      IConfigItemsRepository.cs
-// * 
-// * DESCRIPTION: Defines the contract for configuration items. 
-// * 
-// * SOFTWARE HISTORY:
-// * DATE        DEVELOPER  DESCRIPTION
-// * 01/30/2016  dsmith     Initial revision
-// *******************************************************************
-
-namespace Repository
+﻿namespace Repository
 {
     public interface IConfigItemRepository
     {

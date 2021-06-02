@@ -1,18 +1,4 @@
-﻿// *******************************************************************
-// * Solution:  Paylocity
-// * Project:   PaylocityWeb
-// * File:      Employee.js
-// * 
-// * DESCRIPTION: javascript functions to interact with Employee controller. 
-// * 
-// * SOFTWARE HISTORY:
-// * DATE        DEVELOPER  DESCRIPTION
-// * 01/30/2016  dsmith     Initial revision
-// * 02/10/2016  dsmith     Added renumberDependentRows so new dependent rows are properly tracked 
-// *                        and rolled up to the controller on the serialize() call in addEmp.
-// *******************************************************************
-
-var Paylocity = Paylocity || {};
+﻿var Paylocity = Paylocity || {};
 
 $(document).ready(function () {
     $('#AddEmpButton').on('click', function (e) {

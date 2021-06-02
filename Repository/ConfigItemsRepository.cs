@@ -1,16 +1,4 @@
-﻿// *******************************************************************
-// * Solution:  Paylocity
-// * Project:   Repository
-// * File:      ConfigItemsRepository.cs
-// * 
-// * DESCRIPTION: The configuration items repository. 
-// * 
-// * SOFTWARE HISTORY:
-// * DATE        DEVELOPER  DESCRIPTION
-// * 01/30/2016  dsmith     Initial revision
-// *******************************************************************
-
-namespace Repository
+﻿namespace Repository
 {
     public class ConfigItemsRepository : IConfigItemRepository
     {

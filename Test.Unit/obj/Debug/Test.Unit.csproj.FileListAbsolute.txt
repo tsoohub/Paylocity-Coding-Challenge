@@ -23,3 +23,17 @@ C:\Users\tsood\Source\Repos\PaylocityCodingChallenge2\Test.Unit\obj\Debug\Test.U
 C:\Users\tsood\Source\Repos\PaylocityCodingChallenge2\Test.Unit\obj\Debug\Test.Unit.csproj.CopyComplete
 C:\Users\tsood\Source\Repos\PaylocityCodingChallenge2\Test.Unit\obj\Debug\Test.Unit.dll
 C:\Users\tsood\Source\Repos\PaylocityCodingChallenge2\Test.Unit\obj\Debug\Test.Unit.pdb
+C:\Users\tsood\source\repos\PaylocityChallenge\Test.Unit\bin\Debug\Test.Unit.dll
+C:\Users\tsood\source\repos\PaylocityChallenge\Test.Unit\bin\Debug\Test.Unit.pdb
+C:\Users\tsood\source\repos\PaylocityChallenge\Test.Unit\bin\Debug\Business.dll
+C:\Users\tsood\source\repos\PaylocityChallenge\Test.Unit\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\tsood\source\repos\PaylocityChallenge\Test.Unit\bin\Debug\Models.dll
+C:\Users\tsood\source\repos\PaylocityChallenge\Test.Unit\bin\Debug\Repository.dll
+C:\Users\tsood\source\repos\PaylocityChallenge\Test.Unit\bin\Debug\Business.pdb
+C:\Users\tsood\source\repos\PaylocityChallenge\Test.Unit\bin\Debug\Models.pdb
+C:\Users\tsood\source\repos\PaylocityChallenge\Test.Unit\bin\Debug\Repository.pdb
+C:\Users\tsood\source\repos\PaylocityChallenge\Test.Unit\obj\Debug\Test.Unit.csprojAssemblyReference.cache
+C:\Users\tsood\source\repos\PaylocityChallenge\Test.Unit\obj\Debug\Test.Unit.csproj.CoreCompileInputs.cache
+C:\Users\tsood\source\repos\PaylocityChallenge\Test.Unit\obj\Debug\Test.Unit.csproj.CopyComplete
+C:\Users\tsood\source\repos\PaylocityChallenge\Test.Unit\obj\Debug\Test.Unit.dll
+C:\Users\tsood\source\repos\PaylocityChallenge\Test.Unit\obj\Debug\Test.Unit.pdb

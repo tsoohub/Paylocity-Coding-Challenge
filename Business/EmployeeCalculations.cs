@@ -1,17 +1,4 @@
-﻿// *******************************************************************
-// * Solution:  Paylocity
-// * Project:   Business
-// * File:      EmployeeCalculations.cs
-// * 
-// * DESCRIPTION: Business class to do the employee calculations
-// * 
-// * SOFTWARE HISTORY:
-// * DATE        DEVELOPER  DESCRIPTION
-// * 01/30/2016  dsmith     Initial revision
-// * 02/10/2016  dsmith     Added config repository to the constructor
-// *                        Changed all doubles to decimals
-// *******************************************************************
-using System;
+﻿using System;
 using System.Linq;
 using Models;
 using Repository;

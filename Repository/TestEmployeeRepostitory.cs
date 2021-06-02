@@ -1,16 +1,4 @@
-﻿// *******************************************************************
-// * Solution:  Paylocity
-// * Project:   Repository
-// * File:      TestEmployeeRepository.cs
-// * 
-// * DESCRIPTION: an employee repository for testing. 
-// * 
-// * SOFTWARE HISTORY:
-// * DATE        DEVELOPER  DESCRIPTION
-// * 01/30/2016  dsmith     Initial revision
-// * 02/10/2016  dsmith     Changed all doubles to decimals
-// *******************************************************************
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using Models;
 
@@ -27,8 +15,8 @@ namespace Repository
             new Employee 
             {
                 EmployeeId = 1,
-                FirstName = "John",
-                LastName = "Smith",
+                FirstName = "Tsoodol",
+                LastName = "Tse",
                 Dependents = new List<int>{1, 2, 3}
             },
              new Employee 

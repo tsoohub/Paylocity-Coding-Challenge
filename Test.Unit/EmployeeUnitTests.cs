@@ -1,17 +1,4 @@
-﻿// *******************************************************************
-// * Solution:  Paylocity
-// * Project:   Test.Unit
-// * File:      EmployeeUnitTests.cs
-// * 
-// * DESCRIPTION: Unit tests for employees. 
-// * 
-// * SOFTWARE HISTORY:
-// * DATE        DEVELOPER  DESCRIPTION
-// * 01/30/2016  dsmith     Initial revision
-// * 02/10/2016  dsmith     Added config repository
-// *                        Changed all doubles to decimals
-// *******************************************************************
-using System;
+﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Business;
 using Models;

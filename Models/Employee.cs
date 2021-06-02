@@ -1,16 +1,4 @@
-﻿// *******************************************************************
-// * Solution:  Paylocity
-// * Project:   Models
-// * File:      Employee.cs
-// * 
-// * DESCRIPTION: Employee model. 
-// * 
-// * SOFTWARE HISTORY:
-// * DATE        DEVELOPER  DESCRIPTION
-// * 01/30/2016  dsmith     Initial revision
-// * 02/10/2016  dsmith     Changed Salary and BenefitCost to decimals
-// *******************************************************************
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 

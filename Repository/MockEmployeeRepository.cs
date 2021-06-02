@@ -1,17 +1,4 @@
-﻿// *******************************************************************
-// * Solution:  Paylocity
-// * Project:   Repository
-// * File:      MockEmployeeRepository.cs
-// * 
-// * DESCRIPTION: Simulates an actual employee repository. 
-// * 
-// * SOFTWARE HISTORY:
-// * DATE        DEVELOPER  DESCRIPTION
-// * 01/30/2016  dsmith     Initial revision
-// * 02/10/2016  dsmith     tweaked some of the linq statements
-// *                        Changed all doubles to decimals
-// *******************************************************************
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using Models;
 
