@@ -1,0 +1,53 @@
+﻿@using PaylocityWeb.ViewModels
+@model EmpDetailsViewModel
+
+    <div class="panel-body">
+        <div style="font-size: 20px; color: white; text-align: left; margin: 10px 0;">Employee: @Model.employee.FirstName, @Model.employee.LastName</div>
+
+        <br />
+        <table cellpadding="3" class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Bi-Weekly Pay</th>
+                    <th class="border-bottom">Bi-Weekly Benefit Costs</th>
+                    <th>After benefit deduction</th>
+                </tr>
+            </thead>
+            <tr>
+                <td class="align-right thin-borders" >@string.Format("{0:C}", Model.employee.Salary)</td>
+                <td class="align-right border-bottom thin-borders">@string.Format("{0:C}", Model.PayrollDeduction)</td>
+                <td class="align-right thin-borders">@string.Format("{0:C}", Model.PayAfterBenefitDeduction)</td>
+            </tr>
+        </table>
+
+        <div style="font-size: 20px; color: white; text-align: left; margin: 10px 0;">Dependents</div>
+
+        <table cellpadding="3" class="table table-striped">
+            <thead>
+                <tr>
+                    <th>
+                        <strong>Name</strong>
+                    </th>
+                    <th>
+                        <strong>Status</strong>
+                    </th>
+                    <th>
+                        <strong class="no-wrap">Yearly Cost</strong>
+                    </th>
+                </tr>
+            </thead>
+            <tr>
+                <td class="thin-borders">@Model.employee.FirstName</td>
+                <td class="thin-borders">Self</td>
+                <td class="thin-borders">@string.Format("{0:C}", Model.employee.BenefitCost)</td>
+            </tr>
+            @foreach (var dep in Model.dependents)
+            {
+                <tr>
+                    <td class="thin-borders">@dep.Name</td>
+                    <td class="thin-borders">@dep.Type</td>
+                    <td class="thin-borders">@string.Format("{0:C}", dep.BenefitCost)</td>
+                </tr>
+            }
+        </table>
+    </div>

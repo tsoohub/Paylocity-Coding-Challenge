@@ -1,0 +1,251 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    background-color: #FFF;
+    overflow: hidden;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 10px;
+    background-color: white;
+    min-height: 650px;
+    border: 2px solid gray;
+    border-radius: 6px;
+    margin-top: 4px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+.clickable {
+    cursor: pointer;
+}
+
+.panel {
+    margin-bottom: 0px;
+}
+
+textarea.wide {
+    max-width: 420px;
+}
+
+.no-wrap {
+    white-space: nowrap;
+}
+
+.red-text {
+    color: red;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.hidden-msg {
+    display: none;
+}
+
+.msg {
+    font-weight: bold;
+    color: red;
+}
+
+.display-msg {
+    display: block;
+}
+
+.visible {
+    visibility: visible;
+}
+
+.action-link-modal {
+    font-size: smaller;
+}
+
+.fa-plus-circle {
+    color: green;
+    cursor: pointer;
+}
+
+.fa-remove {
+    color: red;
+    cursor: pointer;
+}
+
+.fa-info-circle {
+    color: navy;
+    cursor: pointer;
+}
+
+h4,
+h5 {
+    white-space: nowrap;
+}
+
+td.thin-borders {
+    width: 100px;
+    white-space: nowrap;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+}
+
+td.align-right {
+    text-align: right;
+}
+
+td.border-bottom {
+    border-bottom: 1px solid black;
+}
+
+.navbar-inverse {
+    background-color: #FFFFFF;
+    border-color: #FFFFFF;
+}
+
+.navbar-inverse .navbar-brand,
+.navbar-inverse .navbar-brand {
+    color: #323e48;
+    background-color: transparent;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover,
+.navbar-inverse .navbar-nav > li > a:focus {
+    color: #323e48;
+    background-color: transparent;
+}
+
+.navbar-inverse .navbar-brand:hover,
+.navbar-inverse .navbar-brand:focus {
+    color: #ff8f1c;
+    background-color: transparent;
+}
+
+    .navbar-inverse .navbar-nav > li > a,
+    .navbar-inverse .navbar-nav > li > a {
+        color: #323e48;
+        margin-top: 18px;
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+.navbar-inverse .navbar-nav > li > a:hover,
+.navbar-inverse .navbar-nav > li > a:focus {
+    color: #ff8f1c;
+    background-color: transparent;
+}
+
+.panel {
+    background-color: #323e48;
+}
+
+.panel-body {
+    margin-top: 54px;
+    border: none;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-color: #323e48;
+    text-align: center;
+}
+
+.detail-title {
+    color: white;
+    text-align: left;
+}
+
+.panel-title {
+    margin-top: 100px;
+    margin-bottom: 0;
+    color: #FFF;
+    font-size: 60px;
+}
+
+.btn-primary {
+    color: #323e48;
+    background-color: #ff8f1c;
+    border-color: #ff8f1c;
+    font-size: 1.65rem;
+    min-width: 11.25rem;
+    min-height: 3.75rem;
+    padding: 1.125rem 2.25rem;
+    margin-top: 20px;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    color: #323e48;
+    background-color: #fff;
+    border-color: #fff;
+}
+
+.top-60 {
+    margin-top: 60px;
+}
+
+tr {
+    background-color: white;
+}
+
+.table > thead > tr,
+.table > tbody > tr {
+    background-color: #FFF;
+}
+
+.table thead > tr > th,
+.table tbody > tr > th,
+.table tfoot > tr > th,
+.table thead > tr > td,
+.table tbody > tr > td,
+.table tfoot > tr > td {
+    text-align: left;
+}
+
+.table-head {
+    background-color: #ff8f1c;
+}
+
+.table-striped > thead > tr:nth-child(odd) > th,
+.table-striped > thead > tr:nth-child(even) > th {
+    background-color: #ff8f1c;
+    color: #FFF;
+    border-bottom: 1px solid #323e48;
+}
+
+.table-striped > tbody > tr:nth-child(odd) > td,
+.table-striped > tbody > tr:nth-child(even) > td {
+    background-color: #FFF;
+    color: #323e48;
+    border-bottom: 1px solid #323e48;
+}
+
+.h4-head {
+    text-align: left;
+    color: white;
+}
+
+.ui-widget-header {
+    background-color: #fff !important;
+    background-image: none !important;
+    border: none;
+}
+
+.h3 {
+    text-align: left !important;
+    color: #ff8f1c !important;
+}
