@@ -37,3 +37,6 @@ C:\Users\tsood\source\repos\PaylocityChallenge\Test.Unit\obj\Debug\Test.Unit.csp
 C:\Users\tsood\source\repos\PaylocityChallenge\Test.Unit\obj\Debug\Test.Unit.csproj.CopyComplete
 C:\Users\tsood\source\repos\PaylocityChallenge\Test.Unit\obj\Debug\Test.Unit.dll
 C:\Users\tsood\source\repos\PaylocityChallenge\Test.Unit\obj\Debug\Test.Unit.pdb
+C:\Users\tsood\source\repos\PaylocityChallenge\Test.Unit\bin\Debug\EntityFramework.dll
+C:\Users\tsood\source\repos\PaylocityChallenge\Test.Unit\bin\Debug\Repository.dll.config
+C:\Users\tsood\source\repos\PaylocityChallenge\Test.Unit\bin\Debug\EntityFramework.xml

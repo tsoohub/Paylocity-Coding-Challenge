@@ -33,7 +33,7 @@ namespace Repository
         /// <param name="aListOfDependents">a list of the employee's dependents</param>
         public void AddEmployee(Employee anEmployee, List<Dependent> aListOfDependents)
         {
-            // TODO: implement this when DB is in place
+
         }
 
         /// <summary>

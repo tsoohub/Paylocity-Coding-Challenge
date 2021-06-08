@@ -224,3 +224,4 @@ C:\Users\tsood\source\repos\PaylocityChallenge\PaylocityWeb\obj\Debug\PaylocityW
 C:\Users\tsood\source\repos\PaylocityChallenge\PaylocityWeb\obj\Debug\PaylocityWeb.csproj.CopyComplete
 C:\Users\tsood\source\repos\PaylocityChallenge\PaylocityWeb\obj\Debug\PaylocityWeb.dll
 C:\Users\tsood\source\repos\PaylocityChallenge\PaylocityWeb\obj\Debug\PaylocityWeb.pdb
+C:\Users\tsood\source\repos\PaylocityChallenge\PaylocityWeb\bin\Repository.dll.config

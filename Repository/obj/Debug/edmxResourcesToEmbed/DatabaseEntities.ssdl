@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ChallengerGrayModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2012" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="ChallengerGrayModelStoreContainer">
+    <EntitySet Name="Employees" EntityType="ChallengerGrayModel.Store.Employees" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Dependents" EntityType="ChallengerGrayModel.Store.Dependents" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Paychecks" EntityType="ChallengerGrayModel.Store.Paychecks" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="EmployeeDependent" Association="ChallengerGrayModel.Store.EmployeeDependent">
+      <End Role="Employee" EntitySet="Employees" />
+      <End Role="Dependent" EntitySet="Dependents" />
+    </AssociationSet>
+    <AssociationSet Name="PaycheckEmployee" Association="ChallengerGrayModel.Store.PaycheckEmployee">
+      <End Role="Paycheck" EntitySet="Paychecks" />
+      <End Role="Employee" EntitySet="Employees" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Employees">
+    <Key>
+      <PropertyRef Name="EmployeeId" />
+    </Key>
+    <Property Name="EmployeeId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FirstName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="LastName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Paycheck_Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Dependents">
+    <Key>
+      <PropertyRef Name="DependentId" />
+    </Key>
+    <Property Name="DependentId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Type" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="BenefitCost" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="EmployeeEmployeeId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Paychecks">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="amount" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="total" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <Association Name="EmployeeDependent">
+    <End Role="Employee" Type="ChallengerGrayModel.Store.Employees" Multiplicity="1" />
+    <End Role="Dependent" Type="ChallengerGrayModel.Store.Dependents" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Employee">
+        <PropertyRef Name="EmployeeId" />
+      </Principal>
+      <Dependent Role="Dependent">
+        <PropertyRef Name="EmployeeEmployeeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="PaycheckEmployee">
+    <End Role="Paycheck" Type="ChallengerGrayModel.Store.Paychecks" Multiplicity="1" />
+    <End Role="Employee" Type="ChallengerGrayModel.Store.Employees" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Paycheck">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Employee">
+        <PropertyRef Name="Paycheck_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

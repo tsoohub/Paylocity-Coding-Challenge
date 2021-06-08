@@ -30,12 +30,12 @@
                     <div class="col-md-2">
                         <table cellpadding="3">
                             <tbody id="dependents">
-                                <tr><th><i class="fa fa fa-plus fa-lg"></i></th><th colspan="2"><strong>@Html.LabelFor(model => model.dependents)</strong></th></tr>
+                                <tr><th><i class="fa fa fa-plus fa-lg"  style="color: #ff8f1c"></i></th><th colspan="2"><strong style="color: #ff8f1c">@Html.LabelFor(model => model.dependents)</strong></th></tr>
                                 <tr id="rowErrorMsg" class="hidden"><td class="msg" colspan="3">You can't remove the initial row</td></tr>
                                 <tr><th></th><th>Name</th><th style="white-space:nowrap;">Dependent Type</th></tr>
                                 <tr id="row0" class="dep-row">
                                     <td>
-                                        <i class="fa fa-remove fa-lg"></i>
+                                        <i class="fa fa-remove fa-lg" style="color: #ff8f1c" ></i>
                                     </td>
                                     <td>
                                         <input type="text" name="dependents[0].Name" class="dep-name" />

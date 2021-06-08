@@ -23,3 +23,8 @@ C:\Users\tsood\source\repos\PaylocityChallenge\Repository\obj\Debug\Repository.c
 C:\Users\tsood\source\repos\PaylocityChallenge\Repository\obj\Debug\Repository.csproj.CopyComplete
 C:\Users\tsood\source\repos\PaylocityChallenge\Repository\obj\Debug\Repository.dll
 C:\Users\tsood\source\repos\PaylocityChallenge\Repository\obj\Debug\Repository.pdb
+C:\Users\tsood\source\repos\PaylocityChallenge\Repository\bin\Debug\Repository.dll.config
+C:\Users\tsood\source\repos\PaylocityChallenge\Repository\bin\Debug\EntityFramework.dll
+C:\Users\tsood\source\repos\PaylocityChallenge\Repository\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\tsood\source\repos\PaylocityChallenge\Repository\bin\Debug\EntityFramework.xml
+C:\Users\tsood\source\repos\PaylocityChallenge\Repository\bin\Debug\EntityFramework.SqlServer.xml

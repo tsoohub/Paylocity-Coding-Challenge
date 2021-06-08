@@ -1,16 +1,16 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Business",
     "\\Models",
     "\\PaylocityWeb",
-    "\\PaylocityWeb\\App_Start",
     "\\PaylocityWeb\\Controllers",
     "\\PaylocityWeb\\ViewModels",
     "\\PaylocityWeb\\Views",
+    "\\PaylocityWeb\\Views\\Employee",
     "\\PaylocityWeb\\Views\\Shared",
-    "\\Repository"
+    "\\Repository",
+    "\\Test.Unit"
   ],
-  "SelectedNode": "\\PaylocityWeb\\Views\\Employee\\Index.cshtml",
+  "SelectedNode": "\\PaylocityWeb\\Views\\Employee\\_Details.cshtml",
   "PreviewInSolutionExplorer": false
 }

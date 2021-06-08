@@ -8,7 +8,7 @@ namespace PaylocityWeb.ViewModels
     {
         public Employee employee { get; set; }
 
-        [Display(Name = "Add new dependent")]
+        [Display(Name = "Add dependent")]
         public List<Dependent> dependents { get; set; }
 
         public decimal PayrollDeduction { get; set; }

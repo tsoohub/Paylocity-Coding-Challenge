@@ -35,8 +35,6 @@ Paylocity.empFunctions = (function ($) {
                 type: 'POST'
             }).done(function (data) {
 
-                console.log('data --------> ', myData);
-
                 window.location.href = Paylocity.baseUrl + 'Employee/Index';
             }).fail(function (response) {
                 $('#errorMsg').removeClass('hidden');
@@ -68,14 +66,14 @@ Paylocity.empFunctions = (function ($) {
         var clone = row.cloneNode(true);
         clone.id = 'row' + count;
         table.appendChild(clone);
-        // update the form elements
+
         $('#dependents tr:last input[name=\'dependents[0].Name\']').attr('name', 'dependents[' + count + '].Name').val('');
         $('#dependents tr:last select').attr('name', 'dependents[' + count + '].Type').prop('selectedIndex', 1);
     },
     removeDependentRow = function (id) {
         if (id !== 'row0') {
             $('#' + id).remove();
-            renumberDependentRows(); // bug fix: when a row was removed from the middle, the rows after it were not found
+            renumberDependentRows();
         }
         else {
             $('#rowErrorMsg').removeClass('hidden');
@@ -102,7 +100,7 @@ Paylocity.empFunctions = (function ($) {
         e.preventDefault();
         $('#addEmp').dialog({
             autoOpen: false,
-            width: 800,
+            width: 1200,
             resizable: true,
             modal: true
         });

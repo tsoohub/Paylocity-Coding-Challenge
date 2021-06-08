@@ -1,6 +1,6 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Business;
+using Services;
 using Models;
 using Repository;
 
@@ -11,15 +11,12 @@ namespace Test.Unit
     {
         private IEmployeeRepository empRepo;
         private IConfigItemRepository configRepo;
-        private EmployeeCalculations empCalcs;
+        private BenefitDeductionService empCalcs;
 
         private const decimal expectedEmpDeduction = 1000;
         private const decimal expectedEmpDiscountedDeduction = 900;
         private const decimal expectedDepDeduction = 500;
         private const decimal expectedDepDiscountedDeduction = 450;
-
-        // John = 1000, Abigail = 450, Aaron = 450, Sarah = 500
-        // 2400 / 26 pay periods = 92.31
         private const decimal expectedPayrollDeduction = 92.31m;
 
         [TestInitialize]
@@ -27,71 +24,56 @@ namespace Test.Unit
         {
             empRepo = new TestEmployeeRepository();
             configRepo = new MockConfigItemsRepository();
-            empCalcs = new EmployeeCalculations(empRepo, configRepo);
+            empCalcs = new BenefitDeductionService(empRepo, configRepo);
         }
 
         [TestMethod]
         public void VerifyDeductionForEmployee()
         {
-            // arrange
-            Employee emp = empRepo.GetEmployeeById(1); // John
+            Employee emp = empRepo.GetEmployeeById(1);
 
-            // act
             decimal actualEmpDeduction = empCalcs.CalculateEmpCost(emp);
 
-            // assert
             Assert.AreEqual(expectedEmpDeduction, actualEmpDeduction);
         }
 
         [TestMethod]
         public void VerifyDiscountedDeductionForEmployee()
         {
-            // arrange
-            Employee emp = empRepo.GetEmployeeById(2); // Angela
+            Employee emp = empRepo.GetEmployeeById(2);
 
-            // act
             decimal actualEmpDiscountedDeduction = empCalcs.CalculateEmpCost(emp);
 
-            // assert
             Assert.AreEqual(expectedEmpDiscountedDeduction, actualEmpDiscountedDeduction);
         }
 
         [TestMethod]
         public void VerifyDeductionForDependent()
         {
-            // arrange
-            Dependent dep = empRepo.GetDependentById(3); // Sarah
+            Dependent dep = empRepo.GetDependentById(3);
 
-            // act
             decimal actualDepDeduction = empCalcs.CalculateDependentCost(dep);
 
-            // assert
             Assert.AreEqual(expectedDepDeduction, actualDepDeduction);
         }
 
         [TestMethod]
         public void VerifyDiscountedDeductionForDependent()
         {
-            // arrange
-            Dependent dep = empRepo.GetDependentById(1); // Abigail
+            Dependent dep = empRepo.GetDependentById(1);
 
-            // act
             decimal actualDepDiscountedDeduction = empCalcs.CalculateDependentCost(dep);
 
-            // assert
             Assert.AreEqual(expectedDepDiscountedDeduction, actualDepDiscountedDeduction);
         }
 
         [TestMethod]
         public void VerifyTotalPayrollDeduction()
         {
-            // arrange
-            Employee emp = empRepo.GetEmployeeById(1); // John
+            Employee emp = empRepo.GetEmployeeById(1);
 
-            // act
             decimal actualPayrollDeduction = Math.Round(empCalcs.CalculateEmpDeductions(emp), 2);
 
-            // assert
             Assert.AreEqual(expectedPayrollDeduction, actualPayrollDeduction);
         }
     }

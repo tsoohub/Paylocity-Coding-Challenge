@@ -2,7 +2,7 @@
 using System.Web.Mvc;
 using Models;
 using Repository;
-using Business;
+using Services;
 using PaylocityWeb.ViewModels;
 
 namespace PaylocityWeb.Controllers
@@ -14,6 +14,7 @@ namespace PaylocityWeb.Controllers
 
         public EmployeeController()
         {
+            // Improvement: Use IOC instead of initialize here
             empRepo = new MockEmployeeRepository();
             configRepo = new MockConfigItemsRepository();
         }
@@ -48,10 +49,8 @@ namespace PaylocityWeb.Controllers
         [HttpPost]
         public ActionResult AddEmployee(EmpDetailsViewModel anEmpDetails)
         {
-            EmployeeCalculations empCalcs = new EmployeeCalculations(empRepo, configRepo);
+            BenefitDeductionService empCalcs = new BenefitDeductionService(empRepo, configRepo);
             empRepo.AddEmployee(anEmpDetails.employee, anEmpDetails.dependents);
-
-            //
 
             return Json(new { id = anEmpDetails.employee.EmployeeId });
         }
@@ -64,7 +63,7 @@ namespace PaylocityWeb.Controllers
         [HttpGet]
         public ActionResult GetDetails(int anEmployeeId)
         {
-            EmployeeCalculations empCalcs = new EmployeeCalculations(empRepo, configRepo);
+            BenefitDeductionService empCalcs = new BenefitDeductionService(empRepo, configRepo);
             EmpDetailsViewModel empDetails = new EmpDetailsViewModel();
             empDetails.employee = empRepo.GetEmployeeById(anEmployeeId);
             empDetails.employee.BenefitCost = empCalcs.CalculateEmpCost(empDetails.employee);

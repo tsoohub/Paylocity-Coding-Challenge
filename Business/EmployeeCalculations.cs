@@ -4,9 +4,9 @@ using Models;
 using Repository;
 using System.Collections.Generic;
 
-namespace Business
+namespace Services
 {
-    public class EmployeeCalculations
+    public class BenefitDeductionService
     {
         // employee repository
         private IEmployeeRepository empRepo;
@@ -32,7 +32,7 @@ namespace Business
         /// </summary>
         /// <param name="anEmpRepository">a class that implements the IEmployeeRepository interface</param>
         /// <param name="aConfigRepository">a class that implements the IConfigItemRepository interface</param>
-        public EmployeeCalculations(IEmployeeRepository anEmpRepository, IConfigItemRepository aConfigRepository)
+        public BenefitDeductionService(IEmployeeRepository anEmpRepository, IConfigItemRepository aConfigRepository)
         {
             empRepo = anEmpRepository;
             configRepo = aConfigRepository;

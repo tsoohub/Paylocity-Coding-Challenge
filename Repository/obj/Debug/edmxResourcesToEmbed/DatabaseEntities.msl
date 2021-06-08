@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ChallengerGrayModelStoreContainer" CdmEntityContainer="ChallengerGrayEntities">
+    <EntitySetMapping Name="Employees">
+      <EntityTypeMapping TypeName="IsTypeOf(ChallengerGrayModel.Employee)">
+        <MappingFragment StoreEntitySet="Employees">
+          <ScalarProperty Name="EmployeeId" ColumnName="EmployeeId" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Dependents">
+      <EntityTypeMapping TypeName="IsTypeOf(ChallengerGrayModel.Dependent)">
+        <MappingFragment StoreEntitySet="Dependents">
+          <ScalarProperty Name="DependentId" ColumnName="DependentId" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="BenefitCost" ColumnName="BenefitCost" />
+          <ScalarProperty Name="EmployeeEmployeeId" ColumnName="EmployeeEmployeeId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Paychecks">
+      <EntityTypeMapping TypeName="IsTypeOf(ChallengerGrayModel.Paycheck)">
+        <MappingFragment StoreEntitySet="Paychecks">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="amount" ColumnName="amount" />
+          <ScalarProperty Name="total" ColumnName="total" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="PaycheckEmployee" TypeName="ChallengerGrayModel.PaycheckEmployee" StoreEntitySet="Employees">
+      <EndProperty Name="Paycheck">
+        <ScalarProperty Name="Id" ColumnName="Paycheck_Id" />
+      </EndProperty>
+      <EndProperty Name="Employee">
+        <ScalarProperty Name="EmployeeId" ColumnName="EmployeeId" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping>
