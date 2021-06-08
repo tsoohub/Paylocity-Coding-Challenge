@@ -1,4 +1,4 @@
-User Requirements:
+**User Requirements:**
 
 One of the critical functions that we provide for our clients is the ability to pay for their employees’ benefits packages. A portion of these costs are deducted from their paycheck, and we handle that deduction. Please demonstrate how you would code the following scenario:
 
