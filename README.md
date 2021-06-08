@@ -15,19 +15,19 @@ Please implement a web application based on these assumptions:
 * There are 26 paychecks in a year
 
 
-**Class Diagram:**
+**Class Diagram:** <br/>
 ![ClassDiagram](https://user-images.githubusercontent.com/12014268/121109919-0d972180-c7d2-11eb-907c-bcc48466c0a4.PNG)
 
 
-**Database Diagram**
+**Database Diagram** <br/>
 ![database_diagram](https://user-images.githubusercontent.com/12014268/121109957-1be53d80-c7d2-11eb-9031-0cbe3eb78bd9.png)
 
 
-**User Interfaces**
-Employee Page
+**User Interfaces** <br/>
+Employee Page\n
 ![Employees](https://user-images.githubusercontent.com/12014268/121110002-315a6780-c7d2-11eb-8795-27723da8b2ad.PNG)
 
 
-Deduction Detail Page:
+Deduction Detail Page: <br/>
 ![EmployeeDetails](https://user-images.githubusercontent.com/12014268/121110023-3ae3cf80-c7d2-11eb-9839-ca8627165106.PNG)
 
