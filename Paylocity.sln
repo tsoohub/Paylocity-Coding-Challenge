@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Models", "Models\Models.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PaylocityWeb", "PaylocityWeb\PaylocityWeb.csproj", "{95604C4D-19A4-4E5C-B953-5DBA5372C299}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Services", "Business\Services.csproj", "{E877A0DE-20F7-4017-A07B-C2A265D82EA0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Services", "Services\Services.csproj", "{E877A0DE-20F7-4017-A07B-C2A265D82EA0}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test.Unit", "Test.Unit\Test.Unit.csproj", "{364A1B32-F69E-4D1C-AF1B-A862011495CF}"
 EndProject
