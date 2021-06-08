@@ -23,7 +23,7 @@ Please implement a web application based on these assumptions:
 ![database_diagram](https://user-images.githubusercontent.com/12014268/121109957-1be53d80-c7d2-11eb-9031-0cbe3eb78bd9.png)
 
 
-**User Interfaces** <br/>
+**UI Design Pages** <br/><br/><br/>
 **Employee Page** <br/>
 ![Employees](https://user-images.githubusercontent.com/12014268/121110002-315a6780-c7d2-11eb-8795-27723da8b2ad.PNG)
 
