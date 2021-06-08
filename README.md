@@ -24,10 +24,13 @@ Please implement a web application based on these assumptions:
 
 
 **User Interfaces** <br/>
-Employee Page\n
+**Employee Page** <br/>
 ![Employees](https://user-images.githubusercontent.com/12014268/121110002-315a6780-c7d2-11eb-8795-27723da8b2ad.PNG)
 
 
-Deduction Detail Page: <br/>
+**Deduction Detail Page:** <br/>
 ![EmployeeDetails](https://user-images.githubusercontent.com/12014268/121110023-3ae3cf80-c7d2-11eb-9839-ca8627165106.PNG)
 
+**Add Employee Page** <br/>
+
+![Add Employee](https://user-images.githubusercontent.com/12014268/121110358-c65d6080-c7d2-11eb-8cec-965ff83a16f3.PNG)
